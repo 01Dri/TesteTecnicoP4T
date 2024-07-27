@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\P4T_API.props" />
+</Project>

@@ -1,0 +1,31 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = P4P_API
+build_property.RootNamespace = P4P_API
+build_property.ProjectDir = G:\PROJETOS - TESTE TECNICO\TesteTecnicoP4T\TesteTecnicoP4T\P4T_API\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\PROJETOS - TESTE TECNICO\TesteTecnicoP4T\TesteTecnicoP4T\P4T_API
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/PROJETOS - TESTE TECNICO/TesteTecnicoP4T/TesteTecnicoP4T/P4T_API/Views/Task/FormCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xGb3JtQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/PROJETOS - TESTE TECNICO/TesteTecnicoP4T/TesteTecnicoP4T/P4T_API/Views/Task/FormEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xGb3JtRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/PROJETOS - TESTE TECNICO/TesteTecnicoP4T/TesteTecnicoP4T/P4T_API/Views/Task/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

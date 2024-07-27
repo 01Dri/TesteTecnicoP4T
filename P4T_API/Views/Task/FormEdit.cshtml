@@ -1,0 +1,121 @@
+﻿@model Business.Models.DTOs.TaskUpdateRequestDTO
+
+@{
+    ViewData["Title"] = "Edit Task";
+}
+
+<h1>Edit Task</h1>
+
+<form method="post" action="@Url.Action("EditTaskPost", new { id = Model.Id })" class="edit-task-form">
+    <input type="hidden" id="id" name="Id" value="@Model.Id" />
+    
+    <div class="form-group">
+        <label for="title">Title</label>
+        <textarea id="title" name="Title" placeholder="Task Title" class="form-control">@Model.Title</textarea>
+        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="Description" placeholder="Task Description" class="form-control">@Model.Description</textarea>
+        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" name="DueDate" class="form-control" value="@Model.DueDate.ToString("yyyy-MM-dd")" />
+        @Html.ValidationMessageFor(model => model.DueDate, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label for="priority">Priority</label>
+        <select id="priority" name="Priority" class="form-control">
+            <option value="">Select Priority</option>
+            <option value="1" @(Model.Priority == 1 ? "selected" : "")>Low</option>
+            <option value="2" @(Model.Priority == 2 ? "selected" : "")>Medium</option>
+            <option value="3" @(Model.Priority == 3 ? "selected" : "")>High</option>
+        </select>
+        @Html.ValidationMessageFor(model => model.Priority, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .edit-task-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 14px;
+    }
+
+</style>
