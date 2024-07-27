@@ -1,4 +1,5 @@
 # TESTE TECNICO PEOPLE4TECH.
+![image](https://github.com/user-attachments/assets/4cd0b581-2cbc-401e-be40-f95de523d777)
 
 ## Parte 1: Questões Teóricas
 Todas as respostas estão aqui: [Respostas questões teóricas](/QUESTOES-TEORICAS.md)
