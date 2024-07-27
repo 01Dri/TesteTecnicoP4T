@@ -36,7 +36,7 @@ Para configurar qual banco o projeto vai utilizar, basta apenas alterar o tipo d
 .NET Core, EntityFramework, DependencyInjection, Configuration e Razor
 
 ## Como utilizar:
-Basta rodar a solução **P4T_API** e acessar o endpoint https://localhost:44337/. Nele vai estar a interface da aplicação.
+Basta rodar a solução (ou o Program.cs) do  **P4T_API** e acessar o endpoint https://localhost:44337/. Nele vai estar a interface da aplicação.
 
 ## Agradecimentos
 Quero agradecer pela oportunidade. Me esforcei bastante para que este projeto atenda o que é esperado de vocês!
