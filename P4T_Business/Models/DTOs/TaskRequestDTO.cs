@@ -23,7 +23,7 @@ public class TaskRequestDTO
     
     public static ValidationResult ValidateDueDate(DateTime dueDate, ValidationContext context)
     {
-        if (dueDate < DateTime.Now)
+        if (dueDate < DateTime.Now.Date)
         {
             return new ValidationResult("Due Date cannot be in the past.");
         }
